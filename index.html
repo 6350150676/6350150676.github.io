@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    index.html — HOME PAGE
+    Lav Naruka Portfolio
+    ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags — update these before going live -->
+  <title>Lav Naruka — Level Designer & Unity Developer</title>
+  <meta name="description"
+        content="Portfolio of Lav Naruka — Level Designer & Unity Developer specialising in Gameplay Systems and VR/Interactive Experiences." />
+  <meta name="author" content="Lav Naruka" />
+
+  <!-- Open Graph (for link previews on LinkedIn, Discord, etc.) -->
+  <meta property="og:title"       content="Lav Naruka — Level Designer & Unity Developer" />
+  <meta property="og:description" content="Game dev portfolio — Level Design, Gameplay Systems, VR." />
+  <meta property="og:type"        content="website" />
+  <!-- og:url and og:image → add once the site is live -->
+
+  <!-- Fonts — loaded from Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────────── -->
+  <!--
+    This nav block is IDENTICAL across all pages.
+    If you add a new page, copy-paste this nav and update the links.
+  -->
+  <header class="navbar" role="banner">
+    <!-- Logo / Brand -->
+    <a href="index.html" class="nav-logo" aria-label="Lav Naruka Home">
+      LN<span class="dot">.</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger toggle — visible on mobile -->
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <!-- ── END NAVIGATION ────────────────────────────────────────── -->
+
+
+  <!-- ── MAIN CONTENT ────────────────────────────────────────── -->
+  <main class="page-wrapper">
+
+    <!-- ── HERO SECTION ────────────────────────────────────── -->
+    <section class="hero grid-bg" aria-label="Hero introduction">
+
+      <!-- Decorative glow blobs (CSS handles their look) -->
+      <div class="hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <!-- Eyebrow label above the name -->
+        <p class="hero-eyebrow">// Portfolio — 2025</p>
+
+        <!-- YOUR NAME — big, full display treatment -->
+        <h1 class="hero-name">
+          Lav<br>
+          <!-- 'outline' = hollow stroke text — visual contrast trick -->
+          <span class="outline">Naruka</span>
+          <!-- The accent dot at the end — a design signature -->
+          <span class="accent">.</span>
+        </h1>
+
+        <!-- Title / Role -->
+        <p class="hero-title">
+          Level Designer &amp; Unity Developer — Gameplay + VR Systems
+        </p>
+
+        <!-- Short bio / value proposition -->
+        <p class="hero-desc">
+          I design gameplay-driven levels and interactive systems using Unity.
+          My focus is on creating meaningful player experiences through space,
+          mechanics, and real-time systems — from competitive arenas to
+          immersive VR environments.
+        </p>
+
+        <!-- Focus Area Tags -->
+        <div class="hero-tags">
+          <span class="tag tag-ld">Level Design</span>
+          <span class="tag tag-sys">Gameplay Systems</span>
+          <span class="tag tag-vr">VR &amp; Interactive</span>
+          <span class="tag tag-unity">Unity 3D</span>
+          <span class="tag tag-unity">C#</span>
+        </div>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html"  class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+    <!-- ── END HERO ─────────────────────────────────────────── -->
+
+
+    <!-- ── FEATURED WORK SECTION ────────────────────────────── -->
+    <!--
+      This section shows 3 project cards as a preview.
+      When your real projects are ready:
+        1. Update the titles and descriptions
+        2. Change the .badge from 'badge-wip' to 'badge-live'
+        3. Link the card to the real project detail page or itch.io
+    -->
+    <section class="featured-section fade-up" aria-label="Featured projects">
+      <div class="container">
+        <p class="featured-label">// Featured Work</p>
+
+        <div class="featured-grid">
+
+          <!-- FEATURED CARD 1 — Tactical Arena -->
+          <div class="featured-card">
+            <p class="featured-num">01</p>
+            <h3 class="featured-title">Tactical Arena</h3>
+            <p class="featured-sub">
+              A competitive level engineered around 3-lane combat flow and
+              high-risk engagement zones.
+            </p>
+            <!-- Tag row -->
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:14px;">
+              <span class="tag tag-ld">Level Design</span>
+              <span class="tag tag-unity">Unity</span>
+            </div>
+            <span class="badge badge-wip" style="margin-top:14px;">In Development</span>
+          </div>
+
+          <!-- FEATURED CARD 2 — Stealth Level -->
+          <div class="featured-card">
+            <p class="featured-num">02</p>
+            <h3 class="featured-title">Stealth Level</h3>
+            <p class="featured-sub">
+              AI-driven patrol system with player-choice stealth architecture
+              and dynamic visibility.
+            </p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:14px;">
+              <span class="tag tag-ld">Level Design</span>
+              <span class="tag tag-sys">AI Systems</span>
+            </div>
+            <span class="badge badge-wip" style="margin-top:14px;">In Development</span>
+          </div>
+
+          <!-- FEATURED CARD 3 — VR Demo -->
+          <div class="featured-card">
+            <p class="featured-num">03</p>
+            <h3 class="featured-title">VR Interaction Demo</h3>
+            <p class="featured-sub">
+              Real-time immersive interaction framework built with Unity
+              XR Toolkit, focused on haptic presence.
+            </p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:14px;">
+              <span class="tag tag-vr">VR</span>
+              <span class="tag tag-unity">Unity</span>
+            </div>
+            <span class="badge badge-wip" style="margin-top:14px;">In Development</span>
+          </div>
+
+        </div><!-- end .featured-grid -->
+
+        <!-- Link to full projects page -->
+        <div style="margin-top:32px; text-align:center;">
+          <a href="projects.html" class="btn btn-outline">
+            See All Projects
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- ── END FEATURED WORK ─────────────────────────────────── -->
+
+  </main>
+  <!-- ── END MAIN CONTENT ─────────────────────────────────────── -->
+
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <span class="footer-left">
+      &copy; <span id="footer-year"></span> Lav Naruka
+    </span>
+    <span class="footer-right">
+      Level Designer &amp; Unity Developer <span>·</span> Built for GitHub Pages
+    </span>
+  </footer>
+  <!-- ── END FOOTER ─────────────────────────────────────────── -->
+
+
+  <!-- ── SCRIPTS ────────────────────────────────────────────── -->
+  <!-- Always load JS at the end of body for best performance -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

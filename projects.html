@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    projects.html — PROJECTS PAGE
+    Lav Naruka Portfolio
+    ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Lav Naruka</title>
+  <meta name="description"
+        content="Level design and Unity development projects by Lav Naruka — competitive arenas, stealth systems, and VR experiences." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION (same on every page) ──────────────────── -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="nav-logo">LN<span class="dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="projects-page">
+
+      <!-- ── PAGE HEADER ─────────────────────────────────── -->
+      <div class="projects-header">
+        <div>
+          <p class="eyebrow">// Work</p>
+          <h1 class="section-title">Projects<span>.</span></h1>
+        </div>
+        <span class="projects-count">3 works in progress</span>
+      </div>
+
+      <!-- ── FILTER BUTTONS ──────────────────────────────── -->
+      <!--
+        HOW FILTERS WORK:
+        Each button has data-filter="X"
+        Each project card has data-category="X"
+        JavaScript (script.js) matches them and shows/hides cards.
+
+        ADD NEW FILTER: duplicate a button, change data-filter and label.
+      -->
+      <div class="filter-row fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="level-design">Level Design</button>
+        <button class="filter-btn" data-filter="gameplay-systems">Gameplay Systems</button>
+        <button class="filter-btn" data-filter="vr">VR / Interactive</button>
+      </div>
+
+      <!-- ── PROJECTS GRID ────────────────────────────────── -->
+      <!--
+        HOW TO ADD A REAL PROJECT:
+        1. Copy one of the .project-card blocks below
+        2. Update: title, description, tags, thumbnail, links
+        3. Change data-status="wip" → data-status="live"
+        4. Change the badge from badge-wip to badge-live
+        5. Replace the placeholder thumbnail with a real image:
+              In .project-thumb, add:
+              style="background-image: url('assets/images/your-image.jpg');
+                     background-size:cover; background-position:center;"
+              Then delete the .thumb-icon and .thumb-label spans inside it.
+        6. Update the "View Details" link to your project page or itch.io URL
+      -->
+      <div class="projects-grid">
+
+        <!-- ════════════════════════════════════════════════
+             PROJECT 1 — TACTICAL ARENA
+             Category: level-design, gameplay-systems
+             Status: wip (in development)
+        ════════════════════════════════════════════════ -->
+        <article
+          class="project-card fade-up"
+          data-category="level-design gameplay-systems"
+          data-status="wip"
+          aria-label="Tactical Arena project"
+        >
+          <!-- THUMBNAIL
+               ──────────
+               Right now this is a styled placeholder.
+               LATER: Replace with a real screenshot.
+               Add to your project folder: assets/images/arena-thumb.jpg
+               Then change the div to:
+                 <div class="project-thumb"
+                      style="background-image:url('assets/images/arena-thumb.jpg');
+                             background-size:cover; background-position:center;">
+               And delete the .thumb-icon and .thumb-label spans.
+          -->
+          <div class="project-thumb thumb-arena">
+            <span class="thumb-icon" aria-hidden="true">⚔</span>
+            <span class="thumb-label">Gameplay Preview — Coming Soon</span>
+          </div>
+
+          <div class="project-body">
+            <!-- Tags — match data-category above -->
+            <div class="project-tags">
+              <span class="tag tag-ld">Level Design</span>
+              <span class="tag tag-sys">Combat Flow</span>
+              <span class="tag tag-unity">Unity</span>
+            </div>
+
+            <h2 class="project-title">Tactical Arena</h2>
+
+            <!--
+              PROJECT DESCRIPTION — write like a designer, not a developer.
+              Focus on: player experience, design intent, what problem you solved.
+              Avoid: "I made this level in Unity"
+              Do:    "This level forces constant mid-lane pressure through..."
+            -->
+            <p class="project-desc">
+              A competitive arena designed to force constant mid-lane pressure
+              while rewarding teams that exploit lateral flanking corridors.
+              Built on 3-lane geometry inspired by Brawl Stars, every choke
+              point is intentional — creating risk/reward decisions on every push.
+            </p>
+
+            <!-- Design Intent — key design pillars (fill in later) -->
+            <div class="project-meta">
+              <strong>Focus:</strong> Lane pressure · Choke point design · Risk/Reward geometry<br>
+              <strong>Tools:</strong> Unity 3D · ProBuilder · Blender<br>
+              <strong>Type:</strong> Competitive Multiplayer Level
+            </div>
+
+            <div class="project-footer">
+              <span class="badge badge-wip">● In Development</span>
+              <!--
+                LINK TO REAL PROJECT LATER:
+                Change href="#" to:
+                  - A project detail page:  href="projects/arena.html"
+                  - An itch.io build:       href="https://itch.io/your-game"
+                  - A YouTube walkthrough:  href="https://youtube.com/..."
+              -->
+              <a href="#" class="project-link" aria-disabled="true">
+                Details soon <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ── END PROJECT 1 ─────────────────────────────── -->
+
+
+        <!-- ════════════════════════════════════════════════
+             PROJECT 2 — STEALTH LEVEL
+             Category: level-design, gameplay-systems
+             Status: wip
+        ════════════════════════════════════════════════ -->
+        <article
+          class="project-card fade-up"
+          data-category="level-design gameplay-systems"
+          data-status="wip"
+          aria-label="Stealth Level project"
+          style="transition-delay: 0.1s;"
+        >
+          <div class="project-thumb thumb-stealth">
+            <span class="thumb-icon" aria-hidden="true">👁</span>
+            <span class="thumb-label">Gameplay Preview — Coming Soon</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-ld">Level Design</span>
+              <span class="tag tag-sys">AI Systems</span>
+              <span class="tag tag-unity">Unity</span>
+            </div>
+
+            <h2 class="project-title">Stealth Level</h2>
+
+            <p class="project-desc">
+              An environment built around player agency — every path offers a
+              different trade-off between speed, safety, and information.
+              AI patrol logic reacts to player noise and visibility cones,
+              making stealth feel earned rather than exploited.
+            </p>
+
+            <div class="project-meta">
+              <strong>Focus:</strong> Player agency · Patrol AI · Visibility design<br>
+              <strong>Tools:</strong> Unity 3D · NavMesh · C# AI logic<br>
+              <strong>Type:</strong> Single-player Stealth Level
+            </div>
+
+            <div class="project-footer">
+              <span class="badge badge-wip">● In Development</span>
+              <a href="#" class="project-link" aria-disabled="true">
+                Details soon <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ── END PROJECT 2 ─────────────────────────────── -->
+
+
+        <!-- ════════════════════════════════════════════════
+             PROJECT 3 — VR INTERACTION DEMO
+             Category: vr
+             Status: wip
+        ════════════════════════════════════════════════ -->
+        <article
+          class="project-card fade-up"
+          data-category="vr"
+          data-status="wip"
+          aria-label="VR Interaction Demo project"
+          style="transition-delay: 0.2s;"
+        >
+          <div class="project-thumb thumb-vr">
+            <span class="thumb-icon" aria-hidden="true">🥽</span>
+            <span class="thumb-label">VR Demo — Coming Soon</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-vr">VR</span>
+              <span class="tag tag-sys">XR Toolkit</span>
+              <span class="tag tag-unity">Unity</span>
+            </div>
+
+            <h2 class="project-title">VR Interaction Demo</h2>
+
+            <p class="project-desc">
+              A real-time VR experience demonstrating physical interaction
+              design — object grabbing, haptic feedback loops, and environmental
+              presence. Built with Unity XR Interaction Toolkit with a focus
+              on immersion over spectacle.
+            </p>
+
+            <div class="project-meta">
+              <strong>Focus:</strong> Haptic feedback · Spatial interaction · Presence<br>
+              <strong>Tools:</strong> Unity XR Toolkit · OpenXR · C#<br>
+              <strong>Type:</strong> VR Interactive Experience
+            </div>
+
+            <div class="project-footer">
+              <span class="badge badge-wip">● In Development</span>
+              <a href="#" class="project-link" aria-disabled="true">
+                Details soon <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ── END PROJECT 3 ─────────────────────────────── -->
+
+        <!--
+          ══════════════════════════════════════════════════
+          ADD YOUR NEXT PROJECT HERE — copy the block above
+          ══════════════════════════════════════════════════
+        -->
+
+      </div><!-- end .projects-grid -->
+
+      <!-- Status note below the grid -->
+      <p class="fade-up" style="
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding: 32px 0;
+      ">
+        // Projects in active development — gameplay videos, breakdowns,
+        and playable builds will be added on completion.
+      </p>
+
+    </div><!-- end .projects-page -->
+  </main>
+
+  <footer class="footer">
+    <span class="footer-left">&copy; <span id="footer-year"></span> Lav Naruka</span>
+    <span class="footer-right">Level Designer &amp; Unity Developer <span>·</span> GitHub Pages</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

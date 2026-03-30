@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    contact.html — CONTACT PAGE
+    Lav Naruka Portfolio
+    ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Lav Naruka</title>
+  <meta name="description"
+        content="Get in touch with Lav Naruka — open to internships, collaborations, and junior roles in level design and Unity development." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="nav-logo">LN<span class="dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="contact-page">
+
+      <!-- ── BIG TYPOGRAPHIC HEADING ──────────────────────── -->
+      <!--
+        This is a typographic design element — two lines,
+        one in outline style, one solid.
+        It creates visual impact without an image.
+      -->
+      <h1 class="contact-hero-text fade-up">
+        Let's<br>
+        <span class="solid">Work.</span>
+      </h1>
+
+      <!-- ── INTRO TEXT ──────────────────────────────────── -->
+      <p class="contact-intro fade-up" style="transition-delay:0.1s">
+        Open to <strong>internships</strong>, collaborations, and
+        <strong>junior roles</strong> in level design or Unity development.
+        If you're building something interesting — I want to hear about it.
+      </p>
+
+      <!-- ── CONTACT CARDS ───────────────────────────────── -->
+      <!--
+        UPDATE THESE BEFORE GOING LIVE:
+        1. Email: Replace "your@email.com" with your real email
+        2. GitHub: Replace the URL with your real GitHub profile
+        3. LinkedIn: Replace the URL with your real LinkedIn URL
+
+        Each card opens in a new tab (target="_blank").
+        The email card uses mailto: to open the user's email app.
+      -->
+      <div class="contact-grid fade-up" style="transition-delay:0.2s">
+
+        <!-- EMAIL -->
+        <a href="mailto:your@email.com"
+           class="contact-card c-email"
+           aria-label="Send an email to Lav Naruka">
+          <span class="contact-card-label">Email</span>
+          <!-- UPDATE: replace with your real email address -->
+          <span class="contact-card-value">your@email.com</span>
+          <span class="contact-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- GITHUB -->
+        <a href="https://github.com/yourusername"
+           class="contact-card c-github"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visit Lav Naruka's GitHub profile">
+          <span class="contact-card-label">GitHub</span>
+          <!-- UPDATE: replace with your real GitHub username -->
+          <span class="contact-card-value">github.com/yourusername</span>
+          <span class="contact-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- LINKEDIN -->
+        <a href="https://linkedin.com/in/yourusername"
+           class="contact-card c-linkedin"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visit Lav Naruka's LinkedIn profile">
+          <span class="contact-card-label">LinkedIn</span>
+          <!-- UPDATE: replace with your real LinkedIn profile URL -->
+          <span class="contact-card-value">linkedin.com/in/lavnaruka</span>
+          <span class="contact-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+      </div><!-- end .contact-grid -->
+
+
+      <!-- ── OPTIONAL: ITCH.IO LINK ──────────────────────── -->
+      <!--
+        When you have games live on itch.io, uncomment this:
+
+        <div style="margin-top:32px;" class="fade-up">
+          <p style="font-size:11px; color:var(--muted); letter-spacing:0.15em;
+                    text-transform:uppercase; margin-bottom:14px;">
+            // Play my games
+          </p>
+          <a href="https://yourusername.itch.io"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-outline">
+            View on itch.io ↗
+          </a>
+        </div>
+      -->
+
+
+      <!-- ── AVAILABILITY NOTE ──────────────────────────── -->
+      <!--
+        Update this text to reflect your actual availability.
+        Delete it if you don't want to show this.
+      -->
+      <div class="fade-up" style="
+        margin-top: 64px;
+        padding: 24px 28px;
+        border: 1px solid var(--border);
+        border-left: 2px solid var(--accent);
+        max-width: 480px;
+        transition-delay: 0.3s;
+      ">
+        <p style="font-size:10px; letter-spacing:0.18em; text-transform:uppercase;
+                  color:var(--accent); margin-bottom:8px;">
+          // Availability
+        </p>
+        <p style="font-size:13px; color:var(--muted); line-height:1.75;">
+          Currently available for <strong style="color:var(--text); font-weight:400;">
+          internships and junior roles</strong> starting from mid-2025.
+          Based in India — open to remote opportunities worldwide.
+        </p>
+      </div>
+
+    </div><!-- end .contact-page -->
+  </main>
+
+  <footer class="footer">
+    <span class="footer-left">&copy; <span id="footer-year"></span> Lav Naruka</span>
+    <span class="footer-right">Level Designer &amp; Unity Developer <span>·</span> GitHub Pages</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

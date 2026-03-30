@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    about.html — ABOUT PAGE
+    Lav Naruka Portfolio
+    ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Lav Naruka</title>
+  <meta name="description"
+        content="About Lav Naruka — Unity developer and level designer focused on gameplay systems and VR experiences." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="nav-logo">LN<span class="dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="about-page">
+
+      <!-- ── PAGE HEADER ─────────────────────────────────── -->
+      <p class="eyebrow">// About Me</p>
+      <h1 class="section-title">Background<span>.</span></h1>
+
+      <div class="divider"></div>
+
+      <!-- ── MAIN TWO-COLUMN LAYOUT ─────────────────────── -->
+      <div class="about-layout">
+
+        <!-- LEFT COLUMN — bio + skills -->
+        <div class="about-left">
+
+          <!-- Designer-voice headline -->
+          <p class="about-big-quote fade-up">
+            I build worlds that make<br>
+            <em>players think while they play.</em>
+          </p>
+
+          <!--
+            BIO PARAGRAPHS
+            ───────────────
+            Write in first person. Focus on:
+            - What you specialise in
+            - How you approach design problems
+            - Where you're headed
+
+            Avoid: listing tools here (that's what the skills section is for)
+            Do:    talk about your design philosophy and thinking process
+          -->
+          <p class="about-text fade-up" style="transition-delay:0.05s">
+            <strong>Unity developer</strong> with experience in gameplay systems,
+            level architecture, and interactive environments. I approach every
+            level as a design problem — where does the player go, what do they
+            feel, and why does it matter?
+          </p>
+
+          <p class="about-text fade-up" style="transition-delay:0.1s">
+            My workflow bridges design and engineering. I don't just place geometry —
+            I build the systems that make that geometry feel <strong>alive</strong>.
+            From AI patrol logic to VR interaction frameworks, I understand how
+            code and space work together.
+          </p>
+
+          <p class="about-text fade-up" style="transition-delay:0.15s">
+            Currently building a focused portfolio of three projects — each designed
+            to prove a specific skill: competitive level layout, stealth AI design,
+            and immersive VR interaction.
+          </p>
+
+          <!-- ── SKILLS ─────────────────────────────────── -->
+          <!--
+            HOW TO UPDATE SKILLS:
+            Simply add or remove a <span class="skill-chip"> element.
+            Group them under the correct .skills-group label.
+          -->
+          <div class="skills-block fade-up" style="transition-delay:0.2s">
+
+            <div class="skills-group">
+              <p class="skills-group-label">// Game Development</p>
+              <div class="skills-list">
+                <span class="skill-chip">Unity 3D</span>
+                <span class="skill-chip">Level Design</span>
+                <span class="skill-chip">Gameplay Systems</span>
+                <span class="skill-chip">Multiplayer (Photon)</span>
+                <span class="skill-chip">VR / XR SDKs</span>
+                <span class="skill-chip">AR Development</span>
+                <span class="skill-chip">ProBuilder</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <p class="skills-group-label">// Programming</p>
+              <div class="skills-list">
+                <span class="skill-chip">C#</span>
+                <span class="skill-chip">C++</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <p class="skills-group-label">// Tools &amp; Software</p>
+              <div class="skills-list">
+                <span class="skill-chip">Blender</span>
+                <span class="skill-chip">Git / GitHub</span>
+                <span class="skill-chip">Photon SDK</span>
+                <span class="skill-chip">Unity XR Toolkit</span>
+              </div>
+            </div>
+
+          </div><!-- end .skills-block -->
+
+        </div><!-- end .about-left -->
+
+
+        <!-- RIGHT COLUMN — stats + focus areas -->
+        <div class="about-sidebar fade-up" style="transition-delay:0.1s">
+
+          <!--
+            STAT GRID
+            ──────────
+            Update these numbers as your portfolio grows.
+            e.g. projects shipped, years of study, etc.
+          -->
+          <div class="stat-grid">
+            <div class="stat-cell">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Projects in Dev</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">C#</div>
+              <div class="stat-label">Primary Language</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">VR</div>
+              <div class="stat-label">Specialisation</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">LD</div>
+              <div class="stat-label">Core Discipline</div>
+            </div>
+          </div>
+
+          <!-- Focus Areas List -->
+          <p class="skills-group-label" style="margin-bottom:14px;">// Focus Areas</p>
+          <div class="focus-list">
+            <div class="focus-item">
+              <span class="focus-dot dot-green" aria-hidden="true"></span>
+              <span>Player-focused level architecture</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot dot-blue" aria-hidden="true"></span>
+              <span>Gameplay mechanics &amp; systems design</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot dot-orange" aria-hidden="true"></span>
+              <span>VR &amp; AR interactive experiences</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot dot-blue" aria-hidden="true"></span>
+              <span>AI-driven encounter &amp; patrol design</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot dot-green" aria-hidden="true"></span>
+              <span>Multiplayer systems (Photon)</span>
+            </div>
+          </div>
+
+          <!--
+            PROFILE PHOTO
+            ──────────────
+            When you have a photo:
+            1. Place it in:  assets/images/profile.jpg
+            2. Uncomment the block below and delete this comment.
+
+            <div style="margin-top:28px; border:1px solid var(--border); overflow:hidden;">
+              <img src="assets/images/profile.jpg"
+                   alt="Lav Naruka"
+                   style="width:100%; display:block; filter:grayscale(20%);" />
+            </div>
+          -->
+
+          <!-- Resume / CV Download -->
+          <!--
+            When your resume is ready:
+            1. Place PDF in: assets/Lav-Naruka-Resume.pdf
+            2. Uncomment the block below.
+
+            <div style="margin-top:28px;">
+              <a href="assets/Lav-Naruka-Resume.pdf"
+                 class="btn btn-outline"
+                 download
+                 style="display:block; text-align:center;">
+                Download Resume ↓
+              </a>
+            </div>
+          -->
+
+        </div><!-- end .about-sidebar -->
+
+      </div><!-- end .about-layout -->
+
+    </div><!-- end .about-page -->
+  </main>
+
+  <footer class="footer">
+    <span class="footer-left">&copy; <span id="footer-year"></span> Lav Naruka</span>
+    <span class="footer-right">Level Designer &amp; Unity Developer <span>·</span> GitHub Pages</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
